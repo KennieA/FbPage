@@ -14,6 +14,7 @@ namespace FacebookPageService
     {
         static PageInfoContext db;
         static PageExtractor pExtractor;
+
         static void Main(string[] args)
         {
             db = new PageInfoContext();

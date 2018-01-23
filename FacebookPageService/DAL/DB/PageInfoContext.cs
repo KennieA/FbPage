@@ -13,7 +13,7 @@ namespace FacebookPageService.DAL.DB
     {
         public PageInfoContext() : base("name=FacebookPageExtractionConnectionString")
         {
-            Database.SetInitializer<PageInfoContext>(new DropCreateDatabaseIfModelChanges< PageInfoContext>());
+            Database.SetInitializer<PageInfoContext>(new DropCreateDatabaseIfModelChanges<PageInfoContext>());
         }
         public DbSet<PageInfo> pageInfo { get; set; }
         public DbSet<PageReactionInfo> pageReactionInfo { get; set; }

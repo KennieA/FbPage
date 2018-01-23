@@ -5,13 +5,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FacebookPageService.DAL
 {
     public class PageExtractor
     {
-        FacebookClient client;
+        private Timer fbTimer;
+        private FacebookClient client;
+
         //Application ID
         string appId = "688754247961761";
         //App Secret
@@ -26,13 +29,24 @@ namespace FacebookPageService.DAL
         {
             try
             {
-                client = new FacebookClient();
-                client.AccessToken = appId+"|"+appSecret;
+                //client = new FacebookClient();
+                //client.AccessToken = appId+"|"+appSecret;
+
+                client = new FacebookClient(appId + "|" + appSecret);
+                // update access token every ½ hour.
+                fbTimer = new Timer(TimerCallback, null, 0, 15000);
+                //fbTimer = new Timer(TimerCallback, null, 0, (1000 * 60) * 30);
             }
             catch (Exception e)
             {
                 throw e;
             }
+        }
+
+        private void TimerCallback(Object o)
+        {
+            client = new FacebookClient(appId + "|" + appSecret);
+            Console.WriteLine("Requested new Facebook access token");
         }
 
         //Extratcs Data from Graph Api & adds it to the dynamic info Object and return a PageInfo Object
