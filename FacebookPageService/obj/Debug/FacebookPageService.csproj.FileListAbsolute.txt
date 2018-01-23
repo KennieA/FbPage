@@ -1,0 +1,12 @@
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\FacebookPageService.exe.config
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\FacebookPageService.exe
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\FacebookPageService.pdb
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\EntityFramework.dll
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\Facebook.dll
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\EntityFramework.xml
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\Facebook.xml
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.csprojResolveAssemblyReference.cache
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.exe
+c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.pdb
