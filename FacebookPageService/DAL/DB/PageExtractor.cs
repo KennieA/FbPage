@@ -13,13 +13,13 @@ namespace FacebookPageService.DAL
     {
         FacebookClient client;
         //Application ID
-        string appId = "162186414407079";
+        string appId = "688754247961761";
         //App Secret
-        string appSecret = "8bfae050695a6750608b92842146e57e";
+        string appSecret = "ad847cb91b65218fb584f6cd5f89d1e6";
         //Current version of the Graph API
         string version = "v2.11/";
         //Change to the ID of preferred page
-        string pageId = "17730497621038/1";       
+        string pageId = "207323199832985/";       
 
         //Sets up the FacebookClients Access Token using the App ID & App Secret.
         public PageExtractor()
@@ -90,6 +90,7 @@ namespace FacebookPageService.DAL
                     postInfo.TotalSad += result.sad.summary.total_count;
                     postInfo.TotalAngry += result.angry.summary.total_count;
                     postInfo.TotalThankful += result.thankful.summary.total_count;
+                    postInfo.DateTime = DateTime.Now;
                 }
                 return postInfo;
             }

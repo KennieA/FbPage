@@ -10,3 +10,5 @@ c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPa
 c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.csprojResolveAssemblyReference.cache
 c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.exe
 c:\users\ka\documents\visual studio 2015\Projects\FacebookPageService\FacebookPageService\obj\Debug\FacebookPageService.pdb
+C:\Users\ka\Documents\Visual Studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ka\Documents\Visual Studio 2015\Projects\FacebookPageService\FacebookPageService\bin\Debug\Newtonsoft.Json.xml

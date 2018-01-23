@@ -1,4 +1,5 @@
-﻿using FacebookPageService.DAL;
+﻿using FacebookPageService.BE;
+using FacebookPageService.DAL;
 using FacebookPageService.DAL.DB;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace FacebookPageService
             
             // Create a Timer object that knows to call our TimerCallback
             // method once every 2000 milliseconds.
-            Timer t = new Timer(TimerCallback, null, 0, 20000);
+            Timer t = new Timer(TimerCallback, null, 0, 10000);
             // Wait for the user to hit <Enter>
             Console.ReadLine();
         }
@@ -32,7 +33,9 @@ namespace FacebookPageService
             Console.WriteLine("In TimerCallback: " + DateTime.Now);
 
             db.pageInfo.Add(pExtractor.ExtractPageData());
-            db.pageReactionInfo.Add(pExtractor.getAllPostsInfo(pExtractor.GetAllPostsOnPage()));
+            List<PostInfo> allPosts = new List<PostInfo>();
+            allPosts = pExtractor.GetAllPostsOnPage();
+            db.pageReactionInfo.Add(pExtractor.getAllPostsInfo(allPosts));
             db.SaveChanges();
 
             // Force a garbage collection to occur for this demo.
