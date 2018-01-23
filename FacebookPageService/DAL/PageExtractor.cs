@@ -29,13 +29,9 @@ namespace FacebookPageService.DAL
         {
             try
             {
-                //client = new FacebookClient();
-                //client.AccessToken = appId+"|"+appSecret;
-
                 client = new FacebookClient(appId + "|" + appSecret);
                 // update access token every ½ hour.
-                fbTimer = new Timer(TimerCallback, null, 0, 15000);
-                //fbTimer = new Timer(TimerCallback, null, 0, (1000 * 60) * 30);
+                fbTimer = new Timer(TimerCallback, null, 0, (1000 * 60) * 30);
             }
             catch (Exception e)
             {
